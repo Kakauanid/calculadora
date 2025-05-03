@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+:root {
+    --cor1: #0167A7; 
+    --cor2: #77B5DB;
+    --cor3: #404E5B;
+    --cor4: #B5D9F3;
+    --cor5: #0687C1;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f0f0;
@@ -7,14 +15,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #666;
+    background-image: linear-gradient(to top, var(--cor3), var(--cor1));
 }
 
 .calculadora {
-    background: #fff;
+    background: var(--cor2);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 5px 5px  5px rgba(0, 0, 0, 0.97);
+    box-shadow: 5px 5px  2px rgba(0, 0, 0, 0.97);
     height: 320px;
     width: 195px;
 }
@@ -30,6 +38,8 @@ body {
     align-items: center;
     text-align: center;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.534);
+    border-radius: 5px;
+    border: none;
 }
 
 input[type="text"] {
@@ -45,5 +55,11 @@ input[type="text"] {
 
 .botoes .unico {
     width: 85px;
-    background-color: gray;
+    background-color: var(--cor5);
+    color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.unico:hover {
+    background-color: var(--cor4);
 }
